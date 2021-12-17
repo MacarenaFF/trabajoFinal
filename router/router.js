@@ -20,7 +20,7 @@ const conn = mysql.createConnection({
 
  // SELECT 
  router.get('/tienda', (req, res) => {
-   let sql = "SELECT * FROM libros";
+   let sql = "SELECT * FROM ff.macarena";
    let query = conn.query(sql, (err, results) => {
      if (err) throw err;
      res.render('tienda', {
@@ -33,7 +33,7 @@ const conn = mysql.createConnection({
  
  router.post('/save', (req, res) => {
     let data = { nombre_completo: req.body.nombre_completo, mail: req.body.mail, password: req.body.password };
-    let sql = "INSERT INTO tablatrabajofinal SET ?";
+    let sql = "INSERT INTO fernandez_macarena SET ?";
     let query = conn.query (sql, data, (err, results) =>{
        if (err) throw err;
        res.redirect('/');
