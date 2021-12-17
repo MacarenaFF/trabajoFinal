@@ -1,0 +1,96 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+
+ /* Header*/
+.banner{
+    background-color: rgb(66, 66, 114);
+    background-size: cover;
+    background-position: center;
+    height: 3vh;
+    text-align: left;   
+    padding: 3rem;
+}
+
+
+/*....... contenido*/
+.contenedorFlex{
+    display: flex;
+    
+    }
+.contenido{ 
+    background-color: rgb(66, 66, 114);
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    width: 160%;
+    }
+/* Formulario*/
+.formulario{
+    margin-left: 5rem;
+    padding: 1rem;
+    background-color: rgb(135, 135, 170);
+    font-family: 'Open Sans', sans-serif;
+    background-position: center;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+   }
+
+/* Imagen */
+
+.foto{
+    background-color: rgb(66, 66, 114);
+    padding: 4rem;
+    text-align: center;
+}
+
+/* FOOTER*/ 
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.footerSecciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerTitulo{
+    font-size: medium;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
+.footerMenu{
+    list-style: none;
+    padding: 1rem;
+    text-decoration: none;}
+.footerMenu a{
+    text-decoration: none;
+    color: white;
+     font-size: 0.8rem;
+}
+
+.footerComunidad ul{
+display: inline-block;
+}
+.icon-fb{
+    font-size: 1.5rem;
+    color: rgb(141, 141, 233);
+}
+.icon-ins{
+    font-size: 1.5rem;
+    color: rgb(224, 133, 28);
+}
+.icon-pint{
+    font-size: 1.5rem;
+    color: rgb(177, 15, 15);
+}
+.icon-mess{
+    font-size: 1.5rem;
+    color: rgb(21, 32, 182);
+}

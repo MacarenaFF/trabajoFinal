@@ -1,0 +1,129 @@
+
+* {
+    Margin:0;
+    padding:0;
+ }
+ /* Header*/
+ .banner{
+    background-color: rgb(66, 66, 114);
+    background-size: cover;
+    background-position: center;
+    height: 5vh;
+    text-align: left;   
+    padding: 3rem;
+}
+ /* Contenido*/
+.container{
+    display: contents;
+    font-size: 16px;
+}
+
+.seccionSuperior{
+    background-color: rgb(66, 66, 114);
+    text-align: center;
+    margin: 0em;
+}
+
+.menuSuperior{
+    list-style: none;
+    text-align: center;
+}
+.menuSuperior li{
+   display: inline-block;}
+
+.menuSuperior a{
+   text-decoration: none;
+   background-color: rgb(133, 131, 128);
+   color: rgb(34, 33, 33);
+   text-transform: uppercase;
+   padding: 0.9em;
+   font-size: 0.9em;}
+
+.menuSuperior a:hover{
+    background-color: rgb(11, 5, 63);
+    color: rgb(101, 126, 31);
+}
+
+.titulo{
+    background-color: white;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(66, 66, 114) ;
+    font-weight: bold;
+ }
+
+ .parrafo{
+    background-color: white;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(66, 66, 114) ;
+    margin-left: 10em;
+    margin-right: 10em;
+  
+ }
+ .tabla{
+     border-color: brown;
+     border-style: solid;
+     padding: 2em;
+     border-radius: 10px;
+     margin-left: 20vh;
+     margin-right: 20vh;
+     display: inline-table;
+ }
+.titulosTabla{
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0em;
+    color:rgb(66, 66, 114) ;
+    font-weight: bold;
+}
+/* FOOTER*/ 
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.footerSecciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerTitulo{
+    font-size: medium;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
+.footerMenu{
+    list-style: none;
+    padding: 1rem;
+    text-decoration: none;}
+.footerMenu a{
+    text-decoration: none;
+    color: white;
+     font-size: 0.8rem;
+}
+
+.footerComunidad ul{
+display: inline-block;
+}
+.icon-fb{
+    font-size: 1.5rem;
+    color: rgb(141, 141, 233);
+}
+.icon-ins{
+    font-size: 1.5rem;
+    color: rgb(224, 133, 28);
+}
+.icon-pint{
+    font-size: 1.5rem;
+    color: rgb(177, 15, 15);
+}
+.icon-mess{
+    font-size: 1.5rem;
+    color: rgb(21, 32, 182);
+}
+

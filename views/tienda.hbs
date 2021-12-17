@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/tienda.css">
+</head>
+
+<body>
+
+    <!-- HEADER......-->
+    {{> header }}
+
+    <!-- Contenido......-->
+
+    <nav class="seccionSuperior">
+        <ul class="menuSuperior">
+            <li><a href="">Ficción</a></li>
+            <li><a href="">No Ficción</a></li>
+            <li><a href="">Juveniles</a></li>
+            <li><a href="">Infantiles</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h5 class="titulo">¡Atención!</h5>
+        <P class="parrafo">
+            En esta Seccion solo mostramos algunos recomendados de cada Categoría... Realizamos solo ventas por Whatsapp
+            o
+            en
+            nuestra sucursal. En caso de querer realizar una compra podes contactarnos por email a través de nuestra
+            página
+            de contacto/consultas o vía Whatsapp. También podes acercarte a la sucural donde seguro la experiencia sera
+            diferente. ¡Te esperamos!
+        </P>
+        <!-- Tabla......-->
+
+        <div class="tabla">
+            <h2 class="titulosTabla">Lista de Productos</h2>
+            <table class="table table-striped" id="mytable">
+                <thead class="titulosTabla">
+                    <th> Producto id</th>
+                    <th> Categoria</th>
+                    <th> Nombre del Libro</th>
+                    <th> Precio</th>
+                    <th> Reseña</th>
+
+                </thead>
+                <tbody>
+                    {{#each results}}
+                    <tr>
+                        <td> {{ libros_id }}</td>
+                        <td> {{ categoria }}</td>
+                        <td> {{ nombre_libro}}</td>
+                        <td> {{ producto_precio }}</td>
+                        <td> {{ resena}} </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Footer......-->
+    {{> footer }}
+    <!-- SCRIPTS......-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

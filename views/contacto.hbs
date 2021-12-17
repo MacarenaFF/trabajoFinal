@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+</head>
+
+<body>
+    <!-- HEADER......-->
+    <header class="banner">
+        <button type="button" class="btn btn-secondary btn-sm" value="Página anterior" onClick="history.go(-1);">Volver
+        </button>
+    </header>
+
+    <!-- FORMULARIO......-->
+    <section class="contenedorFlex">
+        <div class="contenido">
+            <div class="formulario">
+                <h2>Ingrese su Información Personal y consulta</h2>
+                <form action="/send-email" method="post" onsubmit="return validarFormulario()" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre: </label>
+                        <input id="nombre" name="nombre" type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellido: </label>
+                        <input id="apellido" name="apellido" type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="correo" class="form-label">Email</label>
+                        <input id="correo" name="correo" type="email" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="selector" class="form-label">¿Esta registrado?</label>
+                        <select id="selector" name="selector" class="form-select">
+                            <option value="">Valor por defecto</option>
+                            <option value="1">SI</option>
+                            <option value="2">NO</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="consulta" class="form-label">Consulta</label>
+                        <input id="consulta" name="consulta" type="text" class="form-control">
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input id="checkBox" name="checkBox" class="form-check-input" type="checkbox">
+                            <label class="form-check-label" for="gridCheck">
+                                No soy un robot
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary"> Submit </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="foto">
+            <img src="./assets/img/portada2.jpg" class="rounded-circle w-100 h-100" alt="bestSellers">
+        </div>
+    </section>
+
+    <!-- FOOTER......-->
+    {{> footer }}
+
+    <!-- SCRIPTS......-->
+    <script src="./assets/js/contacto.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

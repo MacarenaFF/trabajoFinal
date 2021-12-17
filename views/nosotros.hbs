@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/nosotros.css">
+</head>
+
+<body>
+
+    <!-- HEADER......-->
+    <header class="banner">
+        <div class="boton">
+            <button type="button" class="btn btn-secondary btn-sm text-center" value="Página anterior"
+                onClick="history.go(-1);">Volver</button>
+        </div>
+    </header>
+
+    <!-- Contenido......-->
+
+    <div class="contenedorFlex">
+        <section class="contenido">
+
+            <h2>¡Leer es un buen plan!</h2>
+
+            <p>Leer es comunicación. Leer es esencial para estar conectado al mundo y a las personas. Sin la lectura no
+                conoceríamos, no tendríamos información y nos costaría más imaginar. La lectura es esencial y es algo
+                que debemos alimentar a lo largo de nuestras vidas.</p>
+            <p>La lectura nos mantiene vivos y conectados. Nos hace sentir parte de algo. Y es que existen muchísimas
+                razones por las que la lectura (leer) es más que importante para nuestras vidas. Razones no excluyentes
+                las unas con las otras y que incluso pueden no haber sido recogidas en los siguientes puntos. Al fin y
+                al cabo la lectura nos hace libres y podemos sentir sus beneficios de múltiples maneras..</p>
+
+
+            <div class="imagen">
+                <img src="./assets/img/libroAbierto.jpg" alt="libroAbierto" class="bordesRedondeados">
+                <img src="./assets/img/libroCerrado.jpg" alt="libroCerrado" class="bordesRedondeados">
+                <img src="./assets/img/libroAbierto.jpg" alt="libroAbierto" class="bordesRedondeados">
+                <img src="./assets/img/libroCerrado.jpg" alt="libroCerrado" class="bordesRedondeados">
+
+            </div>
+
+            <p>Queremos fomentar la lectura. La idea es compartir reseñas de libros, estar actualizados con los best
+                seller personas
+                también darle oportundad a nuevos artistas. Es necesario, fomentar nuestra costumbre por la lectura día
+                a día, ya que por medio de esta, accederemos además a poseer buena escritura, y por ende a expresar
+                mejor nuestras ideas, proyectos, pensamientos y argumentos a la hora de manifestar nuestras inquietudes.
+            </p>
+            <p> Te invitamos a sumarte a nuestra página y recibir información sobre nuevas publicaciones</p>
+        </section>
+        </section>
+        <aside class="variedades">
+            <h2>Best Sellers - Argentina 2021</h2>
+            <ul>
+                <li>"La Tía Cósima", de Florencia Bonelli</li>
+                <li>"Lo mucho que te amé", de Eduardo Sacheri</li>
+                <li>"Las inseparables", de Simone de Beauvoir</li>
+                <li>"Todas nuestras maldiciones se cumplieron", de Tamara Tenenbaum</li>
+                <li>"Una historia del conurbano", de Pedro Saborido</li>
+                <li>"Meal Prep", de Paulina Cocina</li>
+                <li>"Pandemia", de Daniel Feierstein</li>
+                <li>"La salud de los Papas", de Nelson Castro</li>
+                <li>"Las 7 revoluciones tecnológicas que transformarán nuestra vida", de Joan Cwaik</li>
+            </ul>
+            <section class="fuente">
+                <h5>Fuente: Ambito.com</h5>
+                <h6>23 de Abril, 2021</h6>
+            </section>
+        </aside>
+    </div>
+
+    <div class="contenedorFlex2">
+        <section class="contenido2">
+            <!-- Button trigger modal -->
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Registrarse
+                </button>
+            </div>
+            <!-- Modal Registrarse-->
+            <form action="/save" method="post">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ingresar su email y password: </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <input type="text" name="nombre_completo" class="form-control nombre_completo"
+                                        placeholder="Nombre Completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="mail" class="form-control mail" placeholder="e-mail"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="password" class="form-control password"
+                                        placeholder="Password" required>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar </button>
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <aside class="variedades">
+
+            <ul>
+                <!--   <li>Casa</li>
+                <li>Libro</li>
+                <li>Texto</li>..-->
+            </ul>
+        </aside>
+    </div>
+    <!-- FOOTER......-->
+    {{> footer }}
+
+    <!-- SCRIPTS......-->
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/registrarse.js"></script>
+</body>
+
+</html>

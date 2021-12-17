@@ -1,0 +1,107 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+
+ /* Header*/
+.banner{
+    background-color: rgb(66, 66, 114);
+    background-size: cover;
+    background-position: center;
+    height: 15vh;
+    text-align: left;   
+    padding: 3vh;
+}
+/* Contenido*/ 
+.contenedor{
+    text-align: center;
+    display: contents;
+    font-size: 16px;
+  
+}
+ .titulo{
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    color:rgb(66, 66, 114) ;
+    font-weight: bold
+ }
+.datos{
+    background-color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(66, 66, 114) ;
+    margin-left: 7vh;
+    margin-right: 7vh;
+}
+
+ .parrafo{
+    background-color: white;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(66, 66, 114);
+    margin-left: 10vh;
+    margin-right: 10vh;
+ }
+ .mapa{
+    background-color: white;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(219, 88, 88);
+    width: 120vh; 
+    height:80vh;
+    text-align: center;
+ }
+/* FOOTER*/ 
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.footerSecciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerTitulo{
+    font-size: medium;
+    padding: 1rem;
+    padding-bottom: 0rem;
+}
+
+.footerMenu{
+    list-style: none;
+    padding: 1rem;
+    text-decoration: none;}
+.footerMenu a{
+    text-decoration: none;
+    color: white;
+     font-size: 0.8rem;
+}
+
+.footerComunidad ul{
+display: inline-block;
+}
+.icon-fb{
+    font-size: 1.5rem;
+    color: rgb(141, 141, 233);
+}
+.icon-ins{
+    font-size: 1.5rem;
+    color: rgb(224, 133, 28);
+}
+.icon-pint{
+    font-size: 1.5rem;
+    color: rgb(177, 15, 15);
+}
+.icon-mess{
+    font-size: 1.5rem;
+    color: rgb(21, 32, 182);
+}
+
